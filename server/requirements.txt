@@ -1,0 +1,5 @@
+fastapi
+python-multipart
+merkle_tree_lib==0.1.4
+pymemcache
+uvicorn

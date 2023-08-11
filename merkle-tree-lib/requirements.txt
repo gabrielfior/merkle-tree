@@ -1,0 +1,2 @@
+sha3==0.2.1 ; python_version >= "3.9" and python_version < "4.0" \
+    --hash=sha256:4e47ae8a86c205d51f15a16b4cb875c1c01fa133a9b3715411d0874fc80cafdb

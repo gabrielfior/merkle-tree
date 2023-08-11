@@ -1,0 +1,22 @@
+# client
+# server
+# redis as storage layer for files (base64 contents, which hashed are leaves)
+version: '3'
+services:
+  memcached:
+    container_name: memcached
+    image: memcached:latest
+    ports:
+        - "11211:11211"
+  server:
+    build:
+      context: ./server
+    ports:
+      - "5000:5000"
+  client:
+    build:
+      context: ./client
+    ports:
+      - "8501:8501"
+    environment:
+      - SERVER_BASE_URL=server:5000
