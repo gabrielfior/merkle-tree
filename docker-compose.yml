@@ -19,4 +19,4 @@ services:
     ports:
       - "8501:8501"
     environment:
-      - SERVER_BASE_URL=server:5000
+      - SERVER_BASE_URL=http://server:5000

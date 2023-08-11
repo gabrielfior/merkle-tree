@@ -7,7 +7,6 @@ merkle_tree_handler = MerkleTreeHandler()
 
 @app.get("/data/{filename}")
 async def get_file(filename: str):
-    # read from memcached
     contents = merkle_tree_handler.get_file_contents(filename)
     print ('contents', contents)
 
